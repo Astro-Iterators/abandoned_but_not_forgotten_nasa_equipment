@@ -1,0 +1,378 @@
+import type { Shot, Clue } from '../director/types';
+import { EPISODE_DIALOGUES } from './dialogue';
+
+export const episode01Shots: Shot[] = [
+  {
+    id: 'S01',
+    title: 'A pergunta na Terra',
+    durationSec: 25,
+    environment: 'earthBase',
+    isFlashback: false,
+    cameraStart: {
+      position: [0, 8, 22],
+      lookAt: [0, 2, 0],
+      fov: 50,
+    },
+    cameraEnd: {
+      position: [0, 2.2, 5.5],
+      lookAt: [0, 1.2, 0],
+      fov: 42,
+    },
+    bipStart: {
+      position: [0, 0.8, 0],
+      rotation: [0, 0, 0],
+      eyeColor: '#1e3a8a', // sleepy blue
+      glowIntensity: 0.3,
+    },
+    bipEnd: {
+      position: [0, 1.2, 0],
+      rotation: [0, 0.2, 0],
+      eyeColor: '#38bdf8', // active cyan
+      glowIntensity: 1.0,
+    },
+    dialogues: EPISODE_DIALOGUES.S01,
+    summary: 'Bip desperta no arquivo costeiro e recebe o registo da Ranger 7.',
+  },
+  {
+    id: 'S02',
+    title: 'Partida',
+    durationSec: 25,
+    environment: 'launchPad',
+    isFlashback: false,
+    cameraStart: {
+      position: [0, 3, 14],
+      lookAt: [0, 5, 0],
+      fov: 55,
+    },
+    cameraEnd: {
+      position: [0, 25, 38],
+      lookAt: [0, 18, 0],
+      fov: 48,
+    },
+    bipStart: {
+      position: [0, 4.5, 0],
+      rotation: [0, 0, 0],
+      eyeColor: '#38bdf8',
+      glowIntensity: 1.0,
+    },
+    bipEnd: {
+      position: [0, 22.0, 0],
+      rotation: [-0.1, 0, 0],
+      eyeColor: '#38bdf8',
+      glowIntensity: 1.2,
+    },
+    dialogues: EPISODE_DIALOGUES.S02,
+    summary: 'Bip embarca no foguetão e sobe através da atmosfera em direcção ao espaço.',
+  },
+  {
+    id: 'S03',
+    title: 'A caminho da Lua',
+    durationSec: 20,
+    environment: 'spaceTransit',
+    isFlashback: false,
+    cameraStart: {
+      position: [0, 1.5, 5],
+      lookAt: [0, 0.5, 0],
+      fov: 45,
+    },
+    cameraEnd: {
+      position: [2.5, 1.8, 4.2],
+      lookAt: [-1, 0.5, -2],
+      fov: 40,
+    },
+    bipStart: {
+      position: [0, 0.5, 0],
+      rotation: [0, 0, 0],
+      eyeColor: '#38bdf8',
+      glowIntensity: 1.0,
+    },
+    bipEnd: {
+      position: [0.2, 0.6, 0],
+      rotation: [0.1, -0.3, 0],
+      eyeColor: '#67e8f9',
+      glowIntensity: 1.1,
+    },
+    dialogues: EPISODE_DIALOGUES.S03,
+    summary: 'Viagem entre a Terra e a Lua com visualização do relevo lunar no visor.',
+  },
+  {
+    id: 'S04',
+    title: 'Um lugar sem máquina inteira',
+    durationSec: 15,
+    environment: 'moonSite',
+    isFlashback: false,
+    cameraStart: {
+      position: [0, 6, 18],
+      lookAt: [0, 1, 0],
+      fov: 52,
+    },
+    cameraEnd: {
+      position: [0, 2.2, 7],
+      lookAt: [0, 0.8, -2],
+      fov: 44,
+    },
+    bipStart: {
+      position: [0, 2.5, 4],
+      rotation: [0, 0, 0],
+      eyeColor: '#38bdf8',
+      glowIntensity: 1.0,
+    },
+    bipEnd: {
+      position: [0, 0.9, -1],
+      rotation: [0, 0, 0],
+      eyeColor: '#38bdf8',
+      glowIntensity: 1.0,
+    },
+    dialogues: EPISODE_DIALOGUES.S04,
+    summary: 'Alunagem suave de Bip no local e constatação de que a Ranger 7 não está intacta.',
+  },
+  {
+    id: 'S05',
+    title: 'Vestígio A: o olhar',
+    durationSec: 10,
+    environment: 'moonSite',
+    isFlashback: false,
+    interaction: 'analyzeClueA',
+    cameraStart: {
+      position: [0, 2.2, 7],
+      lookAt: [0, 0.8, -2],
+      fov: 44,
+    },
+    cameraEnd: {
+      position: [1.2, 1.1, -0.8],
+      lookAt: [0.8, 0.4, -2.5], // focus on lens debris
+      fov: 36,
+    },
+    bipStart: {
+      position: [0, 0.9, -1],
+      rotation: [0, 0.3, 0],
+      eyeColor: '#38bdf8',
+      glowIntensity: 1.0,
+    },
+    bipEnd: {
+      position: [0.4, 0.8, -1.8],
+      rotation: [0.2, 0.4, 0],
+      eyeColor: '#facc15', // inquisitive amber scan
+      glowIntensity: 1.3,
+    },
+    dialogues: EPISODE_DIALOGUES.S05,
+    summary: 'Bip encontra o elemento óptico e analisa a função das câmaras da Ranger 7.',
+  },
+  {
+    id: 'S06',
+    title: 'Flashback 1: antes de partir',
+    durationSec: 30,
+    environment: 'memoryStage',
+    isFlashback: true,
+    flashbackLabel: 'Flashback 1 — Reconstrução histórica (1964)',
+    cameraStart: {
+      position: [0, 1.5, 4],
+      lookAt: [0, 1.2, 0],
+      fov: 38,
+    },
+    cameraEnd: {
+      position: [-3.5, 4.0, 10],
+      lookAt: [0, 2.0, 0],
+      fov: 50,
+    },
+    dialogues: EPISODE_DIALOGUES.S06,
+    summary: 'Reconstrução da partida da Ranger 7 da Terra com 6 câmaras de televisão.',
+  },
+  {
+    id: 'S07',
+    title: 'Vestígio B: o lugar do impacto',
+    durationSec: 10,
+    environment: 'moonSite',
+    isFlashback: false,
+    interaction: 'analyzeClueB',
+    cameraStart: {
+      position: [0.4, 1.4, -0.5],
+      lookAt: [0.4, 0.8, -1.8],
+      fov: 42,
+    },
+    cameraEnd: {
+      position: [-1.8, 1.8, -3.2],
+      lookAt: [-0.5, 0.2, -5.0], // focus on impact zone mark
+      fov: 38,
+    },
+    bipStart: {
+      position: [0.4, 0.8, -1.8],
+      rotation: [0, 0.4, 0],
+      eyeColor: '#38bdf8',
+      glowIntensity: 1.0,
+    },
+    bipEnd: {
+      position: [-0.6, 0.8, -3.8],
+      rotation: [0.2, -0.3, 0],
+      eyeColor: '#facc15',
+      glowIntensity: 1.3,
+    },
+    dialogues: EPISODE_DIALOGUES.S07,
+    summary: 'Bip move-se até à zona do impacto e investiga a velocidade de aproximação.',
+  },
+  {
+    id: 'S08',
+    title: 'Flashback 2: cada vez mais perto',
+    durationSec: 30,
+    environment: 'memoryStage',
+    isFlashback: true,
+    flashbackLabel: 'Flashback 2 — Reconstrução histórica: Aproximação',
+    cameraStart: {
+      position: [0, 4, 14],
+      lookAt: [0, 0, 0],
+      fov: 52,
+    },
+    cameraEnd: {
+      position: [0, 1.2, 2.8],
+      lookAt: [0, 0, -5],
+      fov: 35,
+    },
+    dialogues: EPISODE_DIALOGUES.S08,
+    summary: 'Ranger 7 aproxima-se da Lua a alta velocidade, transmitindo milhares de fotogramas.',
+  },
+  {
+    id: 'S09',
+    title: 'Vestígio C: a sequência do Arquivo',
+    durationSec: 10,
+    environment: 'moonSite',
+    isFlashback: false,
+    interaction: 'orderImages',
+    cameraStart: {
+      position: [-1.8, 1.8, -3.2],
+      lookAt: [-0.5, 0.2, -5.0],
+      fov: 38,
+    },
+    cameraEnd: {
+      position: [-0.6, 1.4, -2.2],
+      lookAt: [-0.6, 0.8, -3.8],
+      fov: 42,
+    },
+    bipStart: {
+      position: [-0.6, 0.8, -3.8],
+      rotation: [0.2, -0.3, 0],
+      eyeColor: '#38bdf8',
+      glowIntensity: 1.0,
+    },
+    bipEnd: {
+      position: [-0.6, 0.9, -3.8],
+      rotation: [0, 0, 0],
+      eyeColor: '#a855f7', // projection violet
+      glowIntensity: 1.4,
+    },
+    dialogues: EPISODE_DIALOGUES.S09,
+    summary: 'Bip projecta 3 fotogramas históricos para o jogador ordenar do mais distante ao mais próximo.',
+  },
+  {
+    id: 'S10',
+    title: 'Flashback 3: o último olhar',
+    durationSec: 35,
+    environment: 'memoryStage',
+    isFlashback: true,
+    flashbackLabel: 'Flashback 3 — Reconstrução histórica: Missão Cumprida',
+    cameraStart: {
+      position: [0, 2.5, 7],
+      lookAt: [0, 0, 0],
+      fov: 45,
+    },
+    cameraEnd: {
+      position: [0, 0.5, 1.5],
+      lookAt: [0, 0, -3],
+      fov: 30,
+    },
+    dialogues: EPISODE_DIALOGUES.S10,
+    summary: 'O impacto planeado da Ranger 7 e a confirmação de que foi uma vitória científica total.',
+  },
+  {
+    id: 'S11',
+    title: 'Recuperar o que ficou',
+    durationSec: 25,
+    environment: 'moonSite',
+    isFlashback: false,
+    interaction: 'chooseVerdict',
+    cameraStart: {
+      position: [-0.6, 1.4, -2.2],
+      lookAt: [-0.6, 0.8, -3.8],
+      fov: 42,
+    },
+    cameraEnd: {
+      position: [-2.0, 3.5, 6.0],
+      lookAt: [0, 1.0, -2.0],
+      fov: 52,
+    },
+    bipStart: {
+      position: [-0.6, 0.9, -3.8],
+      rotation: [0, 0, 0],
+      eyeColor: '#22c55e', // resolved bright green
+      glowIntensity: 1.2,
+    },
+    bipEnd: {
+      position: [0, 0.9, -2.0],
+      rotation: [-0.1, 0.5, 0],
+      eyeColor: '#22c55e',
+      glowIntensity: 1.0,
+    },
+    dialogues: EPISODE_DIALOGUES.S11,
+    summary: 'Bip guarda o módulo de conhecimento no Arquivo: a missão não foi avaria, foi triunfo.',
+  },
+  {
+    id: 'S12',
+    title: 'Uma pergunta vermelha',
+    durationSec: 20,
+    environment: 'spaceTransit',
+    isFlashback: false,
+    cameraStart: {
+      position: [0, 1.5, 5],
+      lookAt: [0, 0.5, 0],
+      fov: 44,
+    },
+    cameraEnd: {
+      position: [-1.2, 1.2, 3.5],
+      lookAt: [0.5, 0.8, -1.0], // focus on Mars red projection
+      fov: 38,
+    },
+    bipStart: {
+      position: [0, 0.5, 0],
+      rotation: [0, 0, 0],
+      eyeColor: '#22c55e',
+      glowIntensity: 1.0,
+    },
+    bipEnd: {
+      position: [0, 0.5, 0],
+      rotation: [0.2, 0.4, 0],
+      eyeColor: '#f97316', // Mars orange-red curiosity reflection
+      glowIntensity: 1.4,
+    },
+    dialogues: EPISODE_DIALOGUES.S12,
+    summary: 'Gancho do próximo episódio: a ficha de Mariner 4 e o planeta vermelho.',
+  },
+];
+
+export const episode01Clues: Clue[] = [
+  {
+    id: 'clueA',
+    name: 'Alojamento Óptico (Câmaras de TV)',
+    description: 'Elemento cenográfico que remete para as 6 câmaras de televisão da Ranger 7.',
+    historicalContext: 'A Ranger 7 transportava dois canais de câmaras (F e P) capazes de captar imagens progressivas da Lua.',
+    archiveFact: 'Objectivo: enviar mais de quatro mil fotografias da superfície lunar antes do embate.',
+    shotId: 'S05',
+    flashbackShotId: 'S06',
+  },
+  {
+    id: 'clueB',
+    name: 'Ponto de Interpretação do Impacto',
+    description: 'Marcação no relevo associada à aproximação acelerada e ao impacto em Mare Cognitum.',
+    historicalContext: 'A nave caiu a cerca de 2,6 km/s, transmitindo dados até 0,19 segundos antes da colisão.',
+    archiveFact: 'A alta velocidade era esperada; não havia retrofoguetes para travar a sonda.',
+    shotId: 'S07',
+    flashbackShotId: 'S08',
+  },
+  {
+    id: 'clueC',
+    name: 'Sequência de Transmissão do Arquivo',
+    description: 'Três fotogramas históricos preservados para ordenar por altitude decrescente.',
+    historicalContext: 'Os cientistas ordenaram as transmissões para reconstruir a topografia das crateras.',
+    archiveFact: 'As imagens provaram que a superfície lunar era suficientemente sólida para alunagens tripuladas.',
+    shotId: 'S09',
+    flashbackShotId: 'S10',
+  },
+];

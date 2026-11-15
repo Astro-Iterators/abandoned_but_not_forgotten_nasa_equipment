@@ -1,0 +1,231 @@
+import type { DialogueLine } from '../director/types';
+
+export const EPISODE_DIALOGUES: Record<string, DialogueLine[]> = {
+  S01: [
+    {
+      id: 'd-s01-1',
+      speaker: 'Narrador',
+      text: 'No laboratório, a equipa prepara o Bip para uma missão de memória.',
+      startOffsetSec: 1.0,
+      durationSec: 4.5,
+    },
+    {
+      id: 'd-s01-2',
+      speaker: 'Arquivo',
+      text: 'Bip calibrado! Primeiro registo histórico: Ranger 7. Destino: Lua.',
+      startOffsetSec: 6.0,
+      durationSec: 4.0,
+    },
+    {
+      id: 'd-s01-3',
+      speaker: 'Bip',
+      text: 'O que devo recuperar?',
+      startOffsetSec: 10.5,
+      durationSec: 2.0,
+    },
+    {
+      id: 'd-s01-4',
+      speaker: 'Arquivo',
+      text: 'Começa por descobrir a sua história!',
+      startOffsetSec: 12.8,
+      durationSec: 2.0,
+    },
+  ],
+  S02: [
+    {
+      id: 'd-s02-1',
+      speaker: 'Narrador',
+      text: 'Contagem decrescente! Foguetão preparado na plataforma costeira.',
+      startOffsetSec: 1.0,
+      durationSec: 4.0,
+    },
+    {
+      id: 'd-s02-2',
+      speaker: 'Bip',
+      text: 'Parece tão grande daqui… A Terra é incrível!',
+      startOffsetSec: 5.5,
+      durationSec: 3.5,
+    },
+    {
+      id: 'd-s02-3',
+      speaker: 'Arquivo',
+      text: 'Órbita alcançada. Rumo à Lua!',
+      startOffsetSec: 9.2,
+      durationSec: 2.5,
+    },
+  ],
+  S03: [
+    {
+      id: 'd-s03-1',
+      speaker: 'Bip',
+      text: 'Quem era a Ranger 7?',
+      startOffsetSec: 1.5,
+      durationSec: 3.0,
+    },
+    {
+      id: 'd-s03-2',
+      speaker: 'Arquivo',
+      text: 'Uma máquina enviada para responder: como é a Lua vista de perto?',
+      startOffsetSec: 5.0,
+      durationSec: 6.0,
+    },
+  ],
+  S04: [
+    {
+      id: 'd-s04-1',
+      speaker: 'Bip',
+      text: 'Alunagem suave! Mas não vejo nenhuma nave inteira.',
+      startOffsetSec: 1.5,
+      durationSec: 3.5,
+    },
+    {
+      id: 'd-s04-2',
+      speaker: 'Arquivo',
+      text: 'Uma história pode deixar mais do que uma pista. Vamos investigar!',
+      startOffsetSec: 5.5,
+      durationSec: 4.0,
+    },
+  ],
+  S05: [
+    {
+      id: 'd-s05-1',
+      speaker: 'Arquivo',
+      text: 'Vestígio óptico detectado! Sincronizar dados com a missão de 1964?',
+      startOffsetSec: 1.0,
+      durationSec: 5.5,
+    },
+  ],
+  S06: [
+    {
+      id: 'd-s06-1',
+      speaker: 'Ranger 7',
+      text: 'Levei 6 câmaras de TV para revelar a Lua que víamos ao longe!',
+      startOffsetSec: 1.0,
+      durationSec: 5.0,
+    },
+    {
+      id: 'd-s06-2',
+      speaker: 'Narrador',
+      text: 'Em 1964, a Ranger 7 partiu com a missão de enviar imagens em tempo real.',
+      startOffsetSec: 6.5,
+      durationSec: 4.5,
+    },
+    {
+      id: 'd-s06-3',
+      speaker: 'Bip',
+      text: 'Então eras os nossos olhos no espaço!',
+      startOffsetSec: 11.5,
+      durationSec: 3.0,
+    },
+  ],
+  S07: [
+    {
+      id: 'd-s07-1',
+      speaker: 'Bip',
+      text: 'Porque não há marcas de travagem?',
+      startOffsetSec: 1.0,
+      durationSec: 3.0,
+    },
+    {
+      id: 'd-s07-2',
+      speaker: 'Arquivo',
+      text: 'Vamos consultar a trajectória acelerada de aproximação.',
+      startOffsetSec: 4.2,
+      durationSec: 3.5,
+    },
+  ],
+  S08: [
+    {
+      id: 'd-s08-1',
+      speaker: 'Ranger 7',
+      text: 'A 2,6 km por segundo! Quanto mais perto, mais detalhes eu transmitia!',
+      startOffsetSec: 1.0,
+      durationSec: 5.0,
+    },
+    {
+      id: 'd-s08-2',
+      speaker: 'Bip',
+      text: 'Está a aproximar-se velozmente! Não vai travar?',
+      startOffsetSec: 6.5,
+      durationSec: 3.5,
+    },
+    {
+      id: 'd-s08-3',
+      speaker: 'Arquivo',
+      text: 'Falta descobrir o objectivo final da missão.',
+      startOffsetSec: 10.5,
+      durationSec: 3.8,
+    },
+  ],
+  S09: [
+    {
+      id: 'd-s09-1',
+      speaker: 'Arquivo',
+      text: 'Fotogramas históricos recebidos na Terra! Organiza a descida.',
+      startOffsetSec: 1.0,
+      durationSec: 5.5,
+    },
+  ],
+  S10: [
+    {
+      id: 'd-s10-1',
+      speaker: 'Ranger 7',
+      text: 'Não vim para pousar suavemente. Vim para transmitir até ao impacto!',
+      startOffsetSec: 1.0,
+      durationSec: 5.0,
+    },
+    {
+      id: 'd-s10-2',
+      speaker: 'Narrador',
+      text: 'Impacto em Mare Cognitum! Mais de quatro mil imagens abriram caminho ao Apollo.',
+      startOffsetSec: 6.5,
+      durationSec: 5.5,
+    },
+    {
+      id: 'd-s10-3',
+      speaker: 'Bip',
+      text: 'Missão cumprida! Um triunfo da humanidade!',
+      startOffsetSec: 12.5,
+      durationSec: 3.0,
+    },
+  ],
+  S11: [
+    {
+      id: 'd-s11-1',
+      speaker: 'Bip',
+      text: 'Estado: missão cumprida. Legado: imagens que nos deram a Lua.',
+      startOffsetSec: 2.0,
+      durationSec: 4.5,
+    },
+    {
+      id: 'd-s11-2',
+      speaker: 'Bip',
+      text: 'Não voltas comigo, mas a tua história vai connosco!',
+      startOffsetSec: 7.0,
+      durationSec: 4.0,
+    },
+  ],
+  S12: [
+    {
+      id: 'd-s12-1',
+      speaker: 'Arquivo',
+      text: 'Registo preservado no cofre!',
+      startOffsetSec: 1.0,
+      durationSec: 2.5,
+    },
+    {
+      id: 'd-s12-2',
+      speaker: 'Bip',
+      text: 'Olha aquele planeta vermelho… É Marte?',
+      startOffsetSec: 4.0,
+      durationSec: 2.5,
+    },
+    {
+      id: 'd-s12-3',
+      speaker: 'Arquivo',
+      text: 'A próxima máquina foi a primeira a vê-lo de perto: Mariner 4!',
+      startOffsetSec: 7.0,
+      durationSec: 2.8,
+    },
+  ],
+};
