@@ -1,0 +1,28 @@
+{
+  "width": 25,
+  "height": 20,
+  "tilewidth": 32,
+  "tileheight": 32,
+  "pixelWidth": 800,
+  "pixelHeight": 640,
+  "spawns": {
+    "player": { "x": 120, "y": 300 },
+    "bip": { "x": 80, "y": 280 },
+    "clue": { "x": 280, "y": 380, "radius": 45 },
+    "rover": { "x": 620, "y": 280, "radius": 60 }
+  },
+  "colliders": [
+    { "x": 0, "y": 0, "width": 800, "height": 32 },
+    { "x": 0, "y": 608, "width": 800, "height": 32 },
+    { "x": 0, "y": 0, "width": 32, "height": 640 },
+    { "x": 768, "y": 0, "width": 32, "height": 640 },
+    { "x": 400, "y": 80, "width": 64, "height": 128 },
+    { "x": 420, "y": 420, "width": 96, "height": 64 },
+    { "x": 180, "y": 140, "width": 80, "height": 64 }
+  ],
+  "landmarks": [
+    { "name": "Cratera Eagle (Borda)", "x": 140, "y": 80 },
+    { "name": "Afloramento de Hematite", "x": 280, "y": 380 },
+    { "name": "Perseverance Valley — Repouso de Opportunity", "x": 620, "y": 280 }
+  ]
+}

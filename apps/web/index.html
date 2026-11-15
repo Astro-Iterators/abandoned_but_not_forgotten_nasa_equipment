@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ainda Estou Aqui — Piloto Opportunity</title>
+    <meta name="description" content="Aventura educativa sobre as memórias do rover Opportunity em Marte com Nayla e Bip." />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="game-container"></div>
+      <!-- Virtual on-screen touch controls for touch/mobile devices -->
+      <div id="touch-controls" class="touch-controls hidden">
+        <div class="dpad">
+          <button class="dpad-btn dpad-up" id="touch-up">▲</button>
+          <div class="dpad-row">
+            <button class="dpad-btn dpad-left" id="touch-left">◀</button>
+            <button class="dpad-btn dpad-down" id="touch-down">▼</button>
+            <button class="dpad-btn dpad-right" id="touch-right">▶</button>
+          </div>
+        </div>
+        <div class="action-buttons">
+          <button class="action-btn" id="touch-action">Interagir [E]</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

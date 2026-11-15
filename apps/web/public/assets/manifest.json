@@ -1,0 +1,60 @@
+{
+  "name": "Ainda Estou Aqui — Piloto Opportunity",
+  "version": "1.0.0",
+  "assets": {
+    "maps": [
+      {
+        "id": "opportunity_map",
+        "path": "/assets/maps/opportunity_map.json",
+        "description": "Mapa ortogonal marciano de Meridiani Planum / Perseverance Valley"
+      }
+    ],
+    "sprites": [
+      {
+        "id": "nayla",
+        "path": "/assets/sprites/nayla.png",
+        "frameWidth": 32,
+        "frameHeight": 32,
+        "description": "Sprite da Nayla com direções e animação de passos"
+      },
+      {
+        "id": "bip",
+        "path": "/assets/sprites/bip.png",
+        "frameWidth": 24,
+        "frameHeight": 24,
+        "description": "Sprite de Bip flutuante com pulso de luz azul"
+      },
+      {
+        "id": "opportunity",
+        "path": "/assets/sprites/opportunity.png",
+        "frameWidth": 64,
+        "frameHeight": 48,
+        "description": "Rover Opportunity com mastro de câmaras e painéis solares"
+      },
+      {
+        "id": "blueberries",
+        "path": "/assets/sprites/blueberries.png",
+        "frameWidth": 32,
+        "frameHeight": 32,
+        "description": "Afloramento rochoso com esférulas de hematite ('mirtilos')"
+      }
+    ],
+    "tilesets": [
+      {
+        "id": "mars_tiles",
+        "path": "/assets/tilesets/mars_tiles.png",
+        "tileSize": 32,
+        "description": "Terreno marciano: areia vermelha, dunas, rochas e limites intransponíveis"
+      }
+    ],
+    "cinematics": [
+      {
+        "id": "opportunity_memory",
+        "video": "/assets/cinematics/opportunity_memory.mp4",
+        "captions": "/assets/captions/opportunity_memory.vtt",
+        "license": "Domínio Público (NASA / JPL-Caltech KSC-04-S-00206)",
+        "durationSeconds": 26
+      }
+    ]
+  }
+}
